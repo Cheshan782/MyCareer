@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"/>
+  <link rel="icon" href="./img/Favicon.png" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
+    rel="stylesheet"
+  />
+  <title>Job Title</title>
+</head>
+<body>
+
+  
+  <header>
+    <h1>Everything About A Cardiologist</h1>
+    <a style="text-align: center;" href="./index.html">Back Home</a>
+  </header>
+
+  
+  <div class="container">
+      <div class="box">
+        <h2>Job Description</h2>
+        <p>A cardiologist is a certified medical doctor that specializes on anything involving the heart and blood vessels. They diagnose and treat conditions such as coronary artery disease, heart failure, arrhythmias, and hypertension. Cardiologists also manage heart attacks and may perform procedures like angioplasty. Their expertise extends to preventative measures to maintain cardiovascular health. Advancements in technology have significantly enhanced the field of cardiology. Innovations such as wearable heart monitors, advanced imaging techniques, and minimally invasive procedures have improved diagnosis and treatment. These technologies allow cardiologists to provide more accurate, timely, and effective care for their patients.</p>
+      </div>
+      <div class="box">
+        <img style="border-radius: 20px; width: 500px;" src="./img/BloodVessel.jpeg" alt="Inside Blood Vessels">
+      </div>
+  </div>
+  <div class="container">
+      <div class="box">
+        <img style="border-radius: 20px; width: 500px;" src="./img/Hospital.jpeg" alt="Inside Blood Vessels">
+      </div>
+      <div class="box">
+        <h2>Hours</h2>
+        <p>They typically work in hospitals, and most of the time they have their own private physicians. When working in a hospital you usually work 40 hours a week, and sometimes can be on call for nights. During a hospital shift, they monitor patients' vital signs, administer medications, and assist with medical procedures. They also communicate with other healthcare professionals to ensure comprehensive patient care and update medical records. Additionally, they provide emotional support to patients and their families.</p>
+        
+      </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div style="background-color: indianred;" class="flip-card-front">
+        <h3 style="color: white; font-size: 30px; padding: 100px 0;text-align: center;">What Does On-Call Mean?</h3>
+      </div>
+      <div style="background-color: indianred;" class="flip-card-back">
+        <p style="text-align: center; padding: 100px 10px 10px 0;">On call means not being at work but available if needed. For example, a nurse who is on call may be available to provide assistance in case of an emergency. The nurse does not have to stay in the hospital. This is very tiring because you can be called at any time. For some people, this is unsettling because they feel under pressure the whole time. I, however, think this on-call strategy benefits me.</p>
+      </div>
+    </div>
+  </div>
+  <h1>Image Gallery</h1>
+
+  <div class="gallery" onclick="openLightbox(event)">
+      <img style="height: 20%;" src="./img/Carasoul/CardiologistImage.jpeg"
+          alt="Image 1">
+      <img style="height: 20%;" src="./img/Carasoul/CardiologistImage(2).jpeg"
+          alt="Image 2">
+      <img style="height: 20%;" src="./img/Carasoul/CardiologistImage(1).jpeg"
+          alt="Image 3">
+      <img style="height: 20%;" src="./img/Carasoul/CardiologistConsultation.jpg"
+          alt="Image 4">
+  </div>
+
+  <!-- Lightbox container -->
+  <div id="lightbox">
+      <!-- Close button -->
+      <span id="close-btn" onclick="closeLightbox()">&times;</span>
+
+      <!-- Main lightbox image -->
+      <img id="lightbox-img" src="" alt="lightbox image">
+
+      <!-- Thumbnails container -->
+      <div id="thumbnail-container">
+          <!-- Thumbnails will be added dynamically using JavaScript -->
+      </div>
+
+      <!-- Previous and Next buttons -->
+      <button id="prev-btn" onclick="changeImage(-1)">&lt; Prev</button>
+      <button id="next-btn" onclick="changeImage(1)">Next &gt;</button>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
