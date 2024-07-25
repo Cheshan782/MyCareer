@@ -135,6 +135,7 @@ img {
 .flip-card-back {
   background-color: white;
   color: black;  transform: rotatex(180deg);
+  text-align: left;
 }
 .CardFrontText{
   width: 100%;
